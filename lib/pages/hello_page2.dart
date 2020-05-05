@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterapp/widgets/blue_button.dart';
 
 class HelloPage2 extends StatelessWidget {
   @override
@@ -7,6 +8,22 @@ class HelloPage2 extends StatelessWidget {
       appBar: AppBar(
         title: Text("Page 2"),
       ),
+      body: _body(context),
     );
   }
+
+  _body(context){
+    return Center(
+      child: BlueButton(
+          "Voltar",
+          onPressed: () => _onClickVoltar(context),
+        color: Colors.blue,
+      ),
+    );
+  }
+
+  _onClickVoltar(context){
+    Navigator.pop(context, "Tela 2");
+  }
+
 }
