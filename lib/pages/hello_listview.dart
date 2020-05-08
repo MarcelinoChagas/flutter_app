@@ -97,7 +97,7 @@ class _HelloListViewState extends State<HelloListView> {
               ),
               child: Text(
                 game.nome,
-                style: TextStyle(fontSize: 26, color: Colors.blue),
+                style: TextStyle(fontSize: 23, color: Colors.blue),
               ),
             ),
           )
